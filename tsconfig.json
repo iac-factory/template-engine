@@ -1,0 +1,14 @@
+{
+    "extends": "@tsconfig/node16-strictest-esm",
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "outDir": "distribution",
+        "diagnostics": true,
+        "declaration": true,
+        "declarationMap": true,
+        "declarationDir": "distribution/@types",
+        "moduleResolution": "Node",
+        "esModuleInterop": true
+    }, "include": ["**/*.json", "**/*.ts"],
+    "exclude": ["**/globals.*", "distribution", "**/*.d.ts"]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "template-engine",
+    "version": "0.7.5",
+    "private": true,
+    "description": "...",
+    "main": "index.js",
+    "module": "main.js",
+    "scripts": {
+        "start": "node distribution",
+        "prestart": "npm run build",
+        "build": "tsc --build tsconfig.json",
+        "common-js": "tsc --build tsconfig.cjs.json",
+        "ecma": "tsc --build tsconfig.esm.json",
+        "compile": "npm run ecma && npm run common-js && npm run build",
+        "prepublishOnly": "npm run compile"
+    },
+    "author": "Jacob B. Sanders <jacob.sanders@cloudhybrid.io> (https://github.com/iac-factory)",
+    "license": "BSD-2-Clause",
+    "dependencies": {
+        "chalk": "^5.0.1",
+        "esm": "latest"
+    },
+    "devDependencies": {
+        "@tsconfig/node16-strictest-esm": "^1.0.1",
+        "@types/esm": "^3.2.0",
+        "@types/node": "^17.0.31",
+        "@typescript-eslint/eslint-plugin": "^5.22.0",
+        "eslint": "^8.15.0",
+        "typescript": "^4.6.4"
+    },
+    "directories": {
+        ".": "distribution",
+        "lib": "distribution/common-js"
+    },
+    "bin": {
+        "ts-esm-template": "distribution/index.js"
+    }
+}

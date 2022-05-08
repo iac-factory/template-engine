@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+    "ts-node": {
+        "preferTsExts": true,
+        "experimentalReplAwait": true
+    },
+    "compilerOptions": {
+        "outDir": "distribution/ecma",
+        "esModuleInterop": true
+    },
+    "exclude": ["distribution"]
+}

@@ -1,7 +1,6 @@
 {
-    "name": "template-engine",
+    "name": "@iac-factory/template-engine",
     "version": "0.8.14",
-    "private": true,
     "description": "...",
     "main": "index.js",
     "module": "main.js",
@@ -11,7 +10,7 @@
         "build": "tsc --build tsconfig.json",
         "common-js": "tsc --build tsconfig.cjs.json",
         "ecma": "tsc --build tsconfig.esm.json",
-        "prepublishOnly": "npm run compile"
+        "prepublishOnly": "npm run build"
     },
     "author": "Jacob B. Sanders <jacob.sanders@cloudhybrid.io> (https://github.com/iac-factory)",
     "license": "BSD-2-Clause",

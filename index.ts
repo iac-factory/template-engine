@@ -1,5 +1,3 @@
-#!/usr/bin/env node
+import("@iac-factory/ecma");
 
-require = require( "esm" )( module, "all" );
-
-module.exports = require( "./main" );
+export { Template } from "./main";

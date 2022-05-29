@@ -1,0 +1,14 @@
+{
+    "name": "example",
+    "version": "0.0.0",
+    "private": true,
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "ts-node index.ts"
+    },
+    "dependencies": {
+        "@iac-factory/ecma": "^0.2.11",
+        "@iac-factory/template-engine": ".."
+    }
+}

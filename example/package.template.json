@@ -1,6 +1,6 @@
 {
-    "name": "template-engine",
-    "version": "0.8.14",
+    "name": "{{% Name %}}",
+    "version": "0.7.5",
     "private": true,
     "description": "...",
     "main": "index.js",
@@ -9,19 +9,12 @@
         "start": "node .",
         "prestart": "npm run build",
         "build": "tsc --build tsconfig.json",
-        "common-js": "tsc --build tsconfig.cjs.json",
-        "ecma": "tsc --build tsconfig.esm.json",
         "prepublishOnly": "npm run compile"
     },
     "author": "Jacob B. Sanders <jacob.sanders@cloudhybrid.io> (https://github.com/iac-factory)",
     "license": "BSD-2-Clause",
     "dependencies": {
-        "@iac-factory/ecma": "^0.2.11",
-        "ansi-colors": "^4.1.3"
-    },
-    "publishConfig": {
-        "access": "public",
-        "tag": "latest"
+        "@iac-factory/ecma": "^0.2.11"
     },
     "devDependencies": {
         "eslint": "^8.16.0",
